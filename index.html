@@ -1,0 +1,215 @@
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#">PORTFOLIO</a>
+        <button id="nav-toggle" class="nav-toggle" aria-label="Buka menu">
+          ☰
+        </button>
+        <nav id="main-nav" class="main-nav">
+          <a href="#about">About</a> <a href="#projects">Project</a>
+          <a href="#skills">Skills</a> <a href="#contact">Contact</a>
+          <button
+            id="theme-toggle"
+            class="theme-toggle"
+            aria-label="Toggle dark mode"
+          >
+            <span class="icon moon">🌙</span> <span class="icon sun">☀️</span>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1>Hi, I'm <span class="accent">I Made Prasatya Dinata</span></h1>
+            <p>UI/UX designer | Illustrator | FrontEnd Dev</p>
+            <div class="hero-cta">
+              <a class="btn" href="#projects">View Projects</a>
+              <a class="btn ghost" href="#contact">Contact</a>
+            </div>
+          </div>
+          <div class="hero-image" aria-hidden="true">
+            <div class="device-mock">
+              <img
+                src="image/profile.png"
+                alt="Project Preview"
+                class="hero-photo"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="container about">
+        <h2>About Me</h2>
+        <p>
+          I am a web developer focused on creating attractive, functional, and
+          responsive interfaces. Proficient in HTML, CSS, JavaScript, PHP,
+          MySQL, and React for building modern web applications. Experienced in
+          using Figma, Photoshop, and Illustrator for UI/UX design and visual
+          assets, with an interest in digital art for creative design. I am
+          committed to delivering effective and user-friendly web solutions.
+        </p>
+      </section>
+      <section id="projects" class="container projects">
+        <h2>Project</h2>
+        <div class="grid">
+          <article class="card">
+            <img src="image/beabadoobee.png" alt="Project 1" loading="lazy" />
+            <div class="card-body">
+              <h3>Ilustration project</h3>
+              <p>
+                Creative digital illustrations that emphasize color and
+                character. Tools: Adobe Illustrator & Photoshop.
+              </p>
+              <a class="btn small" href="illustrasi/gallery.html"
+                >Lihat Detail</a
+              >
+            </div>
+          </article>
+          <article class="card">
+            <img src="image/figma.png" alt="Project 2" loading="lazy" />
+            <div class="card-body">
+              <h3>UI/UX project</h3>
+              <p>
+                Designing user-friendly and responsive web/mobile interfaces.
+                Tools: Figma
+              </p>
+              <a
+                class="btn small"
+                href="https://www.figma.com/proto/YyuKfjDiB5vtFIpwDavEoz/Untitled?node-id=7-3288&t=nfEQ76cLc36tlNmD-1&starting-point-node-id=7%3A3288"
+                >Lihat Detail</a
+              >
+            </div>
+          </article>
+          <article class="card">
+            <img src="image/comic.jpg" alt="Project 3" loading="lazy" />
+            <div class="card-body">
+              <h3>Comic</h3>
+              <p>
+                An educational comic about photosynthesis, conveying scientific
+                concepts visually and in an easy-to-understand way. Tools : Ibis
+                Paint X, Canva.
+              </p>
+              <a
+                class="btn small"
+                href="https://www.canva.com/design/DAG3FKhnqew/Idern0TgXs7YKpRs70bzuw/edit?utm_content=DAG3FKhnqew&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                >Lihat Detail</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="skills" class="container skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li>HTML &amp; CSS</li>
+          <li>JavaScript</li>
+          <li>PHP</li>
+          <li>Canva</li>
+          <li>Ibis Paint X</li>
+          <li>Responsive Design</li>
+          <li>Adobe Photoshop</li>
+          <li>Adobe Illustrator</li>
+          <li>figma</li>
+          <li>Digital art</li>
+          <li>React</li>
+          <li>Java</li>
+        </ul>
+      </section>
+      <section id="contact" class="container contact">
+        <h2>Contact</h2>
+        <div class="contact-wrapper">
+          <!-- FORM -->
+          <form id="contact-form" class="contact-form">
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <button class="btn small" type="submit">Submit</button>
+            <span id="form-status"></span>
+            <input
+              type="text"
+              name="website"
+              id="website"
+              tabindex="-1"
+              autocomplete="off"
+              style="display: none"
+            />
+          </form>
+          <!-- SOCIAL CONTACT -->
+          <div class="contact-social">
+            <p>Contact me via</p>
+            <div class="social-links">
+              <!-- Instagram -->
+              <a
+                href="https://instagram.com/madeepras"
+                target="_blank"
+                class="social-btn instagram"
+                aria-label="Instagram"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <!-- WhatsApp -->
+              <a
+                href="https://wa.me/6285737321126"
+                target="_blank"
+                class="social-btn whatsapp"
+                aria-label="WhatsApp"
+              >
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <!--github-->
+              <a
+                href="https://github.com/madepras"
+                target="_blank"
+                class="social-btn github"
+                aria-label="GitHub"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("Q2zKQlv2PdwplUrc3");
+      })();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

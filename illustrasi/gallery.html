@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — Portfolio</title>
+
+  <link rel="stylesheet" href="styleilus.css" />
+</head>
+
+<body>
+
+  <section class="gallery-section">
+    <h2 class="gallery-title">Ilustrasi & Visual</h2>
+
+    <div class="gallery">
+      <!-- GANTI FOTO DI SINI -->
+      <img src="foto/art1.png" onclick="openModal(this)">
+      <img src="foto/beabadoobee.png" onclick="openModal(this)">
+      <img src="foto/Boy Pablo poster.png" onclick="openModal(this)">
+      <img src="foto/new.png" onclick="openModal(this)">
+      <img src="foto/PABLO.png" onclick="openModal(this)">
+      <img src="foto/urban.png" onclick="openModal(this)">
+      <img src="foto/gtr.jpeg" onclick="openModal(this)">
+      <img src="foto/porsche.jpeg" onclick="openModal(this)">
+      <img src="foto/humble.jpeg" onclick="openModal(this)">
+    </div>
+  </section>
+
+  <!-- MODAL -->
+  <div class="modal" id="modal">
+    <span class="modal-close" onclick="closeModal()">×</span>
+    <img id="modalImage">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

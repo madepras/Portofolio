@@ -1,0 +1,137 @@
+/* ================= ROOT ================= */
+:root {
+  --bg: #f1f5f9;
+  --card: rgba(255, 255, 255, 0.7);
+  --text: #0b1220;
+  --muted: #64748b;
+  --accent: #7c3aed;
+  --border: rgba(0, 0, 0, 0.08);
+  --radius: 16px;
+}
+
+body.dark {
+  --bg: #0f172a;
+  --card: rgba(17, 24, 39, 0.65);
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --border: rgba(255, 255, 255, 0.1);
+}
+
+/* ================= RESET ================= */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  padding: 2rem;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* ================= SECTION ================= */
+.gallery-section {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.gallery-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.gallery-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--accent);
+  margin: 0.6rem auto 0;
+  border-radius: 999px;
+}
+
+/* ================= MASONRY ================= */
+.gallery {
+  column-count: 4;
+  column-gap: 1.2rem;
+}
+
+@media (max-width: 1200px) {
+  .gallery { column-count: 3; }
+}
+@media (max-width: 768px) {
+  .gallery { column-count: 2; }
+}
+@media (max-width: 480px) {
+  .gallery { column-count: 1; }
+}
+
+/* ================= IMAGE CARD ================= */
+.gallery img {
+  width: 100%;
+  margin-bottom: 1.2rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+
+  background: var(--card);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.gallery img:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.18),
+    0 0 0 1px rgba(124, 58, 237, 0.15);
+}
+
+/* ================= MODAL ================= */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(12px);
+
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 18px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+}
+
+/* ================= CLOSE ================= */
+.modal-close {
+  position: absolute;
+  top: 22px;
+  right: 28px;
+  font-size: 38px;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.modal-close:hover {
+  transform: rotate(90deg) scale(1.1);
+  opacity: 1;
+}
