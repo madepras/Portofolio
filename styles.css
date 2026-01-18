@@ -333,13 +333,32 @@ section h2::after {
   grid-template-columns: 1fr;
   justify-items: center;
 }
-.contact form {
-  width: 100%;
-  max-width: 480px;
+
+.contact-email {
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+  text-align: center;
 }
-.form-row {
-  margin-bottom: 1rem;
+
+.contact-email a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
 }
+
+.contact-email a:hover {
+  text-decoration: underline;
+}
+
+.reflection p {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+
 label {
   display: block;
   margin-bottom: 0.4rem;

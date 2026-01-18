@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Portfolio</title>
+    <title>Portofolio</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,6 +25,8 @@
         <nav id="main-nav" class="main-nav">
           <a href="#about">About</a> <a href="#projects">Project</a>
           <a href="#skills">Skills</a> <a href="#contact">Contact</a>
+          <a href="#reflection">Reflection</a>
+
           <button
             id="theme-toggle"
             class="theme-toggle"
@@ -43,7 +45,14 @@
             <p>UI/UX designer | Illustrator | FrontEnd Dev</p>
             <div class="hero-cta">
               <a class="btn" href="#projects">View Projects</a>
-              <a class="btn ghost" href="#contact">Contact</a>
+              <a
+                class="btn ghost"
+                href="cv\CV-I Made Prasatya Dinata.pdf"
+                target="_blank"
+                download
+              >
+                Download CV
+              </a>
             </div>
           </div>
           <div class="hero-image" aria-hidden="true">
@@ -80,7 +89,10 @@
                 Creative digital illustrations that emphasize color and
                 character. Tools: Adobe Illustrator & Photoshop.
               </p>
-              <a class="btn small" href="illustrasi/gallery.html"
+              <a
+                class="btn small"
+                href="illustrasi/gallery.html"
+                target="_blank"
                 >Lihat Detail</a
               >
             </div>
@@ -96,6 +108,7 @@
               <a
                 class="btn small"
                 href="https://www.figma.com/proto/YyuKfjDiB5vtFIpwDavEoz/Untitled?node-id=7-3288&t=nfEQ76cLc36tlNmD-1&starting-point-node-id=7%3A3288"
+                target="_blank"
                 >Lihat Detail</a
               >
             </div>
@@ -112,6 +125,7 @@
               <a
                 class="btn small"
                 href="https://www.canva.com/design/DAG3FKhnqew/Idern0TgXs7YKpRs70bzuw/edit?utm_content=DAG3FKhnqew&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                target="_blank"
                 >Lihat Detail</a
               >
             </div>
@@ -135,42 +149,33 @@
           <li>Java</li>
         </ul>
       </section>
+
+      <section id="reflection" class="container reflection">
+        <h2>Reflection</h2>
+        <p>
+          Through building this portfolio, I learned how to design interfaces
+          that are not only visually appealing but also user-friendly and
+          responsive. I improved my understanding of layout, animation, dark
+          mode implementation, and performance optimization. This project also
+          strengthened my ability to combine design creativity with technical
+          implementation, preparing me for real-world web development
+          challenges.
+        </p>
+      </section>
+
       <section id="contact" class="container contact">
         <h2>Contact</h2>
         <div class="contact-wrapper">
-          <!-- FORM -->
-          <form id="contact-form" class="contact-form">
-            <div class="form-row">
-              <label for="name">Name</label>
-              <input id="name" name="name" type="text" required />
-            </div>
-            <div class="form-row">
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" required />
-            </div>
-            <div class="form-row">
-              <label for="message">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="4"
-                required
-              ></textarea>
-            </div>
-            <button class="btn small" type="submit">Submit</button>
-            <span id="form-status"></span>
-            <input
-              type="text"
-              name="website"
-              id="website"
-              tabindex="-1"
-              autocomplete="off"
-              style="display: none"
-            />
-          </form>
+          <!-- Gmail -->
+          <p class="contact-email">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:madepras182005@gmail.com">
+              madepras182005@gmail.com
+            </a>
+          </p>
+
           <!-- SOCIAL CONTACT -->
           <div class="contact-social">
-            <p>Contact me via</p>
             <div class="social-links">
               <!-- Instagram -->
               <a
